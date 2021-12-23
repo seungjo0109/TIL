@@ -7,3 +7,8 @@
 ## Clean Code
 * Naming
 
+<br/>
+
+## Embedded
+* ABI & EABI
+
