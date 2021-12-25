@@ -1,3 +1,0 @@
-/home/dmi/projects/git/TIL/cpp/boost/thread_pool/build/CMakeFiles/rebuild_cache.dir
-/home/dmi/projects/git/TIL/cpp/boost/thread_pool/build/CMakeFiles/boost_thread_pool.dir
-/home/dmi/projects/git/TIL/cpp/boost/thread_pool/build/CMakeFiles/edit_cache.dir
