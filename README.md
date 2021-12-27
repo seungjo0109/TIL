@@ -9,6 +9,12 @@
 
 <br/>
 
+## Object-Oriented Programming
+* SOLID
+
+
+<br/>
+
 ## Embedded
 * ABI & EABI
 
