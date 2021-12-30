@@ -15,8 +15,11 @@
 
 <br/>
 
-## Embedded
-* ABI & EABI
+## System
+
+* ETC
+    * ABI & EABI
+    * 스레드 풀의 적절한 크기는?
 
 <br/>
 
