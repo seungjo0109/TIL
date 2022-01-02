@@ -26,6 +26,8 @@
 ## C++
 * Boost
 * namespace
+* reference
+* new & delete
 
 <br/>
 
