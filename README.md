@@ -33,6 +33,7 @@
 * doc
     * forward declaration
     * variable initialization
+    * static
 
 <br/>
 
