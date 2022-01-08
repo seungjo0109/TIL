@@ -29,8 +29,9 @@
     * namespace
     * reference
     * new & delete
-    * Constructor Overloading
+    * constructor overloading
 * doc
+    * memory
     * forward declaration
     * variable initialization
     * static
