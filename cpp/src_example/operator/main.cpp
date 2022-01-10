@@ -11,7 +11,7 @@ int main(void)
 
     std::cout << "op == op2: " << (op == op2) << std::endl;
     std::cout << "op == op3: " << (op == op3) << std::endl;
-    std::cout << "op + op3: " << (op+op3) << std::endl;
+    std::cout << "op + op3: " <<  (op += op3) << std::endl;
     op4 = op + op2;
     std::cout << "op4 = op + op2, op4.val_: " << op4.val_ << std::endl;
 
