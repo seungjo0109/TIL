@@ -26,7 +26,9 @@
 
 ## C++
 * Boost
-    * Asynchronous timer
+    * Asio
+        * Synchronous timer
+        * Asynchronous timer
 * example source
     * namespace
     * reference
