@@ -1,74 +1,39 @@
+//
+// timer.cpp
+// ~~~~~~~~~
+//
+// Copyright (c) 2003-2021 Christopher M. Kohlhoff (chris at kohlhoff dot com)
+//
+// Distributed under the Boost Software License, Version 1.0. (See accompanying
+// file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
+//
+
 #include <iostream>
 #include <boost/asio.hpp>
-#include <boost/thread/thread.hpp>
-#include <boost/bind.hpp>
-#include <boost/date_time/posix_time/posix_time.hpp>
- 
-class printer
+
+void print(const boost::system::error_code& /*e*/)
 {
-public:
-  printer(boost::asio::io_context& io)
-    : strand_(io),
-      timer1_(io, boost::posix_time::seconds(1)),
-      timer2_(io, boost::posix_time::seconds(1)),
-      count_(0)
-  {
-    timer2_.async_wait(boost::asio::bind_executor(strand_,
-          boost::bind(&printer::print2, this)));
- 
-    timer1_.async_wait(boost::asio::bind_executor(strand_,
-          boost::bind(&printer::print1, this)));
- 
-  }
- 
-  ~printer()
-  {
-    std::cout << "Final count is " << count_ << std::endl;
-  }
- 
-  void print1()
-  {
-    if (count_ < 10)
-    {
-      std::cout << "Timer 1: " << count_ << std::endl;
-      ++count_;
- 
-      timer1_.expires_at(timer1_.expires_at() + boost::posix_time::seconds(1));
- 
-      timer1_.async_wait(boost::asio::bind_executor(strand_,
-            boost::bind(&printer::print1, this)));
-    }
-  }
- 
-  void print2()
-  {
-    if (count_ < 10)
-    {
-      std::cout << "Timer 2: " << count_ << std::endl;
-      ++count_;
- 
-      timer2_.expires_at(timer2_.expires_at() + boost::posix_time::seconds(1));
- 
-      timer2_.async_wait(boost::asio::bind_executor(strand_,
-            boost::bind(&printer::print2, this)));
-    }
-  }
- 
-private:
-  boost::asio::io_context::strand strand_;
-  boost::asio::deadline_timer timer1_;
-  boost::asio::deadline_timer timer2_;
-  int count_;
-};
- 
+  std::cout << "Hello, world!" << std::endl;
+}
+
 int main()
 {
   boost::asio::io_context io;
-  printer p(io);
-  boost::thread t(boost::bind(&boost::asio::io_context::run, &io));
+
+  boost::asio::steady_timer t(io, boost::asio::chrono::seconds(5));
+
+  /*
+   steady_timer::async_wait() function to perform an asynchronous wait
+   When calling ths function we pass the print callback handler that was defined above
+  */
+  t.async_wait(&print);
+
+  /*
+   Finally, we must call the io_context::run() member function on the io_context object. 
+   The asio library provides a guarantee that callback handlers will only be called from threads that are currently calling io_context::run().
+   Therefore unless the io_context::run() functio is called the callback for the asynchronous wait competion will never be invoked.
+  */
   io.run();
-  t.join();
- 
+
   return 0;
 }
- 
