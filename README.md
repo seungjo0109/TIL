@@ -12,6 +12,7 @@
 
 ## Object-Oriented Programming
 * SOLID
+* Refactoring
 
 
 <br/>
