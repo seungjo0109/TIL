@@ -13,6 +13,7 @@
 ## Object-Oriented Programming
 * SOLID
 * Refactoring
+* Function
 
 
 <br/>
