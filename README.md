@@ -59,3 +59,8 @@
     * [초보를 위한 도커 안내서 - 도커란 무엇인가?](https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html)
     * [초보를 위한 도커 안내서 - 설치하고 컨테이너 실행하기](https://subicura.com/2017/01/19/docker-guide-for-beginners-2.html)
     * [초보를 위한 도커 안내서 - 이미지 만들고 배포하기](https://subicura.com/2017/02/10/docker-guide-for-beginners-create-image-and-deploy.html)
+* State estimation & Filter
+    * [How a Kalman filter works, in pictures](https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/)
+    * [Using nonlinear Kalman filtering to estimate signals](https://www.embedded.com/using-nonlinear-kalman-filtering-to-estimate-signals/)
+* Coursera
+    * [Self-Driving car](https://www.coursera.org/specializations/self-driving-cars)
