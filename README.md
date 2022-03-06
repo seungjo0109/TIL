@@ -53,6 +53,9 @@
     * [모두의 코드, 씹어먹는 C++ 강좌](https://modoocode.com/)
     * [C++ String 클래스](https://blockdmask.tistory.com/338)
     * [코드없는 프로그래밍](https://www.youtube.com/channel/UCHcG02L6TSS-StkSbqVy6Fg?app=desktop)
+* Multithreading
+    * [Memory Model](https://entrypoint.tistory.com/171)
+
 * Python
     * [점프 투 파이썬](https://wikidocs.net/book/1)
 * Docker
@@ -62,5 +65,9 @@
 * State estimation & Filter
     * [How a Kalman filter works, in pictures](https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/)
     * [Using nonlinear Kalman filtering to estimate signals](https://www.embedded.com/using-nonlinear-kalman-filtering-to-estimate-signals/)
+    * [Quarternion kinematics for the error-state Kalman filter](https://arxiv.org/pdf/1711.02508.pdf)
+    * [The Unscented Kalman Filters for Nonlinear Estimation](https://www.seas.harvard.edu/courses/cs281/papers/unscented.pdf)
+    * [Unscented Kalman Filter Tutorial](https://www.cse.sc.edu/~terejanu/files/tutorialUKF.pdf)
+    * [Unscented Kalman Filter - A New Extension of the Kalman Filter to Nonlinear Systems](https://www.cse.sc.edu/~terejanu/files/tutorialUKF.pdf)
 * Coursera
     * [Self-Driving car](https://www.coursera.org/specializations/self-driving-cars)
