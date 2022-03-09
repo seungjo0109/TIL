@@ -21,7 +21,7 @@
 
 ## System
 
-* ETC
+* etc
     * ABI & EABI
     * 스레드 풀의 적절한 크기는?
 
@@ -44,6 +44,13 @@
     * forward declaration
     * variable initialization
     * static
+
+<br/>
+
+## Python
+* etc
+    * PIP TIP
+
 
 <br/>
 
