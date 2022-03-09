@@ -44,6 +44,7 @@
     * forward declaration
     * variable initialization
     * static
+    * thread sanitizer
 
 <br/>
 
