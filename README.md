@@ -49,6 +49,7 @@
 
 ## Python
 * coroutine
+* multithreading & multiprocessing
 * etc
     * PIP TIP
 
