@@ -80,6 +80,9 @@
     * [The Unscented Kalman Filters for Nonlinear Estimation](https://www.seas.harvard.edu/courses/cs281/papers/unscented.pdf)
     * [Unscented Kalman Filter Tutorial](https://www.cse.sc.edu/~terejanu/files/tutorialUKF.pdf)
     * [Unscented Kalman Filter - A New Extension of the Kalman Filter to Nonlinear Systems](https://www.cse.sc.edu/~terejanu/files/tutorialUKF.pdf)
+    * [Advanced Vehicle State Estimation: A Tutorial and Comparative Study](https://www.sciencedirect.com/science/article/pii/S2405896317323674)
+    * [Sensor Fusion Algorithms For Autonomous Driving: Part 1 — The Kalman filter and Extended Kalman Filter](https://medium.com/@wilburdes/sensor-fusion-algorithms-for-autonomous-driving-part-1-the-kalman-filter-and-extended-kalman-a4eab8a833dd)
+    * [This Image Is Why Self-Driving Cars Come Loaded with Many Types of Sensors](https://www.technologyreview.com/2017/07/21/150383/this-image-is-why-self-driving-cars-come-loaded-with-many-types-of-sensors/)
 * Coursera
     * [Self-Driving car](https://www.coursera.org/specializations/self-driving-cars)
 * Machine learning
